@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <script>
+            function aciona_mouse(valor)
+            {
+                document.getElementById("msg").innerHTML = valor;
+            }
+        </script>
+        <meta charset="utf-8" />
+        <title>Exemplo Onmouse</title>
+    </head>
+    <body>
+        <div id = "msg"></div>
+        <br/>
+        <table border = '1' 
+                onmouseover= "aciona_mouse('entrei na tabela');"
+                onmouseout="aciona_mouse('sai da tabela');">
+            <tr>
+                <th>titulo 1</th>
+                <th>titulo 2</th>
+                <th>titulo 3</th>
+            </tr>
+            <tr>
+                <td>Linhas 1 Coluna 1</td>
+                <td>Linhas 1 Coluna 2</td>
+                <td>Linhas 1 Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Linhas 2 Coluna 1</td>
+                <td>Linhas 2 Coluna 2</td>
+                <td>Linhas 2 Coluna 3</td>
+            </tr>
+        </table>
+    </body>
+</html>
