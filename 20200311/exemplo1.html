@@ -18,6 +18,11 @@
                 alert(cor);
                 document.getElementById("quadrado").style.backgroundColor = cor;
             }
+			function cor_da_fonte_do_quadrado(cor)
+			{
+				
+				document.getElementById("quadrado").style.color = cor;
+			}
 		</script>
     </head>
     <body>
@@ -30,6 +35,9 @@
             <br/><br/>
             Cor de fundo do quadrado:
             <input type = "color" name = "corQuadrado" onchange="troca_cor_quadrado(this.value)" />
+			<br/><br/>
+            Cor da fonte do quadrado:
+            <input type = "color" name = "corQuadrado" onchange="cor_da_fonte_do_quadrado(this.value)" />
         </form>
     </body>
 </html>
